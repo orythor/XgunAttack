@@ -14,9 +14,9 @@ Termux L7 Flooder — Dark Media Edition
 ## Install
 
 ```bash
+pkg update -y && pkg upgrade -y
 pkg install git python -y
-pkg install python git curl -y
-git clone https://github.com/orythor/XgunAttack.git
+git clone https://github.com/xioxploit/XgunAttack.git
 cd XgunAttack
 bash install.sh
 ```

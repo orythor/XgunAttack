@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
 import requests
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 
 SOURCES = [
@@ -8,12 +8,25 @@ SOURCES = [
     "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/http.txt",
     "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",
     "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
+    "https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/protocols/http/data.txt",
+    "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt",
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt",
+    "https://raw.githubusercontent.com/r00tee/Proxy-List/main/Https.txt",
+    "https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/http.txt",
+    "https://raw.githubusercontent.com/oxylabs/free-proxy-list/main/http.txt",
+    "https://raw.githubusercontent.com/zloi-user/hideip.me/main/http.txt",
+    "https://raw.githubusercontent.com/prxchk/proxy-list/main/http.txt",
+    "https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/http.txt",
+    "https://raw.githubusercontent.com/yemixzy/proxy-list/main/proxies/http.txt",
+    "https://raw.githubusercontent.com/mmpx12/proxy-list/master/http.txt",
+    "https://raw.githubusercontent.com/Anonym0usWork/proxyscrapers/main/http.txt",
+    "https://raw.githubusercontent.com/rdavydov/proxy-list/main/proxies/http.txt",
 ]
 
 
 def fetch(url):
     try:
-        r = requests.get(url, timeout=10)
+        r = requests.get(url, timeout=15)
         pattern = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{2,5}"
         return re.findall(pattern, r.text)
     except Exception as e:

@@ -1,5 +1,7 @@
 __pycache__/
 *.pyc
 proxies.txt
+proxies_all_*.txt
+proxies_backup_*.txt
 .venv/
 *.log

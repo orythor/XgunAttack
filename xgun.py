@@ -556,7 +556,7 @@ def main():
         elif choice == "0":
             print(f"\n{Fore.RED}╭─[ {Fore.YELLOW}EXIT{Fore.RED} ]─")
             print(f"│ {Fore.WHITE}Bye Tuan. XgunAttack by XioXploit")
-            print(f"│ {Fore.WHITE}BOT BY: ANGGA GANTENG ACUUU")
+            print(f"│ {Fore.WHITE}BY : © XioNiV")
             print(f"╰──────────────────────────────{Style.RESET_ALL}\n")
             sys.exit(0)
         else:

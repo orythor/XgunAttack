@@ -16,7 +16,6 @@ Termux L7 Flooder — Dark Media Edition
 ```bash
 pkg install git python -y
 pkg install python git curl -y
-pip install requests aiohttp fake-useragent colorama
 git clone https://github.com/orythor/XgunAttack.git
 cd XgunAttack
 bash install.sh

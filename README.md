@@ -1,4 +1,4 @@
-# XgunAttack v2.1
+# XgunAttack v4.0
 
 Termux L7 Flooder — Dark Media Edition
 **by XioXploit**
